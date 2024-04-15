@@ -2,6 +2,8 @@ N, M = map(int, input().split())
 cards = list(map(int, input().split()))
 max = 0
 
+
+톱니가 맞물리듯이..
 for first_card in range(N):
     for second_card in range(first_card + 1, N):
         for third_card in range(second_card + 1, N):

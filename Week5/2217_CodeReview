@@ -1,0 +1,16 @@
+rope = int(input()) #입력받을 회수(로프의 개수)
+weights = []
+
+
+for i in range(rope):  #로프개수만큼 입력받음
+    weights.append(int(input())) #무게 리스트에 추가
+
+
+weights.sort(reverse=True) #최댓값부터 시작할 수 있도록 내림차순 정렬
+
+result = [] #결과를 담을 리스트
+
+for j in range(rope):
+    result.append(weights[j]*(j+1)) #0부터 반복이니까 밧줄이 들어야하는무게는 J+1개
+
+print(max(result)) #지금까지 모인 무게로 최대값산출
